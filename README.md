@@ -22,8 +22,27 @@ The frontend of the application is maintained in a separate repository. You can 
 
 ### Setup
 
-1. Clone the repository:
+1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/priyesh95/tech-articles-backend.git
-   cd tech-articles-backend
+   git clone https://github.com/yourusername/technology-articles-backend.git
+   cd technology-articles-backend
+   
+2. Install dependencies:
+
+   ```bash
+   npm install
+
+3. Create a .env file in the root directory and add the following environment variables:
+
+   ```bash
+   MONGO_URI=mongodb://localhost:27017/yourdbname
+   REDIS_URL=redis://localhost:6379
+   PORT=5000
+
+4. Start the server:
+
+   ```bash
+   npm start
+
+The backend server will be available at http://localhost:5000.
